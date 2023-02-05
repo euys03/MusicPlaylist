@@ -9,6 +9,11 @@
 	float : left;
 }
 
+body {
+	text-align : center;
+}
+
+
 li {
 	margin : 10px;
 }
@@ -25,6 +30,7 @@ form > div > input {
 	height : 40px;
 	text-align : center;
 	border : 1px solid #ccc;
+	border-radius : 60px; 
 	background-color : #fafafa;
 	box-shadow : 1px 1px 1px #ccc;
 }
@@ -32,17 +38,27 @@ button {
 	width : 150px;
 	height : 40px;
 	text-align : center;
+	margin : 10px;
 	border : 1px solid #ccc;
+	border-radius : 60px;
 	background-color : #fafafa;
 	box-shadow : 1px 1px 1px #ccc;
+}
+button > a {
+	color : black;
+	text-decoration : none;
 }
 
 /* 메인 페이지(플레이리스트) 테이블 스타일 */
 table {
 	border : 1px solid #ccc;
+	margin : 0 auto;
+	margin-top : 20px;
+	margin-bottom : 20px;
 }
 th, td {
 	border : 1px solid #fafafa;
+	padding : 5px 10px;
 }
 
 

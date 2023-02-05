@@ -10,17 +10,14 @@ public class Music {
 	
 	// 생성자
 	public Music() {}
-	
-	
 
+	
+	// 매개변수있는 생성자
 	public Music(String musicTitle) {
 		super();
 		this.musicTitle = musicTitle;
 	}
 
-
-
-	// 매개변수있는 생성자
 	public Music(String musicTitle, String musicSinger, String musicRelease, String musicTime, String musicAgency) {
 		super();
 		this.musicTitle = musicTitle;
@@ -29,7 +26,7 @@ public class Music {
 		this.musicTime = musicTime;
 		this.musicAgency = musicAgency;
 	}
-	// 곡명, 가수명, 기획사명이 있는 생성자
+
 	public Music(String musicTitle, String musicSinger, String musicAgency) {
 		super();
 		this.musicTitle = musicTitle;
@@ -80,13 +77,12 @@ public class Music {
 		this.musicAgency = musicAgency;
 	}
 
+	
 	// toString()
 	@Override
 	public String toString() {
 		return "Music [musicTitle=" + musicTitle + ", musicSinger=" + musicSinger + ", musicRelease=" + musicRelease
 				+ ", musicTime=" + musicTime + ", musicAgency=" + musicAgency + "]";
 	}
-	
-	
 
 }

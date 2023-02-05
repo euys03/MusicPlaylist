@@ -4,17 +4,17 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>곡 추가</title>
+	<title>곡 추가 페이지</title>
 	<link rel="stylesheet" href="/resources/css/music.css">
 </head>
 	<body>
 		<h1>곡 추가</h1>
-		<h3>곡 정보를 입력하세요</h3>
+		<h3>추가할 곡의 정보를 입력하세요!</h3>
 		
 		<div id ="register-form">
 			<form action="/music/addMusic" method="post">
 				<fieldset>
-					<legend>곡 추가</legend>
+					<legend> ♬ ♪ ♩ ♬ ♭ </legend>
 					<ul id="music-register">
 						<li>
 							<lablel for="music-title">곡명</lablel>

@@ -15,7 +15,7 @@
 </head>
 <body>
     <h1>플레이리스트 웹</h1>
-    <h2>나만의 플레이리스트를 만들어보세요</h2>
+    <h2>♬ 나만의 플레이리스트를 만들어보세요 ♬</h2>
 
     <div class="addbtn">
         <button><a href="/music/addMusic">곡 추가</a></button>
