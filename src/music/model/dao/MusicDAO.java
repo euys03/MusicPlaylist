@@ -116,7 +116,7 @@ public class MusicDAO {
 	 * 곡 삭제 DAO
 	 * @param conn
 	 * @param musicTitle
-	 * @return
+	 * @return result
 	 */
 	public int deleteMusic(Connection conn, String musicTitle) {
 		String query = "DELETE FROM MUSICWEB_TBL WHERE MUSIC_TITLE= ?";

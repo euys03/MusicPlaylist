@@ -28,7 +28,7 @@ public class RemoveServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String musicTitle = request.getParameter("title");
+		String musicTitle = request.getParameter("title") !=null? request.getParameter("title") : "0";
 		MusicService mService = new MusicService();
 		int result = mService.deleteMusic(musicTitle);
 		if(result > 0) {
@@ -36,8 +36,8 @@ public class RemoveServlet extends HttpServlet {
 			response.sendRedirect("/music/list");
 		}else {
 			request.setAttribute("title", "곡 삭제 실패");
-			request.setAttribute("msg", "곡 삭제가 완료되지 않았습니다.");
-			request.getRequestDispatcher("/WEB-INF/views/common/error.jsp");
+			request.setAttribute("msg", "곡 삭제가 완료되지 않았습니다. 곡 제목이 올바른지 확인해주세요!");
+			request.getRequestDispatcher("/WEB-INF/views/music/error.jsp");
 		}
 	}
 

@@ -15,8 +15,7 @@
 </head>
 <body>
     <h1>MY PLAYLIST</h1>
-    <!-- <h2>플레이리스트 페이지</h2> -->
-    현재 나의 플레이리스트입니다! 마이플~!
+    나의 재생목록을 확인해보세요!
     <table>
         <colgroup>
             <col style="width: '25%'; text-align: center;">
@@ -56,11 +55,13 @@
     
     <script>
     function removeCheck() {
-    	if(confirm("곡을 삭제하시겠습니까?")) {
-    		var musicTitle = document.querySelector("#title").value;
-    		
-    		location.href = "/music/remove?title=" + musicTitle;
-    	}
+   		var mTitle = prompt("삭제할 곡의 제목을 입력하세요");
+
+   		if(confirm("정말 해당 곡 (" + mTitle + ") 을 삭제하시겠습니까?")) {
+   			
+    		location.href="/music/remove?title=" + mTitle;   				
+		}
+
     }
     </script>
     

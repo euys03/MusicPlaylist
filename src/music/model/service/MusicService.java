@@ -71,7 +71,7 @@ public class MusicService {
 
 
 	/**
-	 * 곡 삭제 Service
+	 * 곡 삭제하기 Service
 	 * @param musicTitle
 	 * @return result
 	 */
